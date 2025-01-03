@@ -1,0 +1,170 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#payments",
+      "flex-layout.row#footer-menu",
+      "flex-layout.row#copyright"
+    ],
+    "props": {
+      "blockClass": ["relative", "z-998"]
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#payments",
+      "flex-layout.row#footer-menu",
+      "flex-layout.row#copyright"
+    ]
+  },
+  "flex-layout.row#payments": {
+    "props": {
+      "blockClass": "footer-row-1"
+    },
+    "children": ["flex-layout.col#footer-4-desktop"]
+  },
+  "flex-layout.row#footer-menu": {
+    "props": {
+      "blockClass": "footer-row-1",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#footer-policy",
+      "flex-layout.col#spacer",
+      "flex-layout.col#footer-institutional",
+      "flex-layout.col#spacer",
+      "flex-layout.col#footer-help",
+      "flex-layout.col#spacer",
+      "flex-layout.col#social-media"
+    ]
+  },
+  "flex-layout.col#footer-4-desktop": {
+    "children": ["flex-layout.row#paymentImagesDesktop"],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "right",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#footer-policy": {
+    "children": ["rich-text#footer-policy", "vtex.menu@2.x:menu#policy"]
+  },
+  "flex-layout.col#footer-institutional": {
+    "children": [
+      "rich-text#footer-institutional",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "flex-layout.col#footer-help": {
+    "children": ["rich-text#footer-help", "vtex.menu@2.x:menu#help"]
+  },
+  "flex-layout.col#social-media": {
+    "children": ["rich-text#social-media", "flex-layout.row#social-media-links"]
+  },
+  "flex-layout.row#social-media-links": {
+    "props": {
+      "blockClass": "social-media-links",
+      "colSizing": "auto",
+      "colGap": 6,
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["flex-layout.col#facebook", "flex-layout.col#instagram"]
+  },
+  "flex-layout.col#facebook": {
+    "children": ["link#facebook"]
+  },
+  "flex-layout.col#instagram": {
+    "children": ["link#instagram"]
+  },
+  "rich-text#footer-policy": {
+    "props": {
+      "text": "Policies",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+  "rich-text#footer-institutional": {
+    "props": {
+      "text": "Institutional",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+  "rich-text#footer-help": {
+    "props": {
+      "text": "Help and Support",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+  "rich-text#social-media": {
+    "props": {
+      "text": "Social Media",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+  "flex-layout.row#copyright": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "copyrightContainer"
+    },
+    "children": ["flex-layout.col#copyright"]
+  },
+  "flex-layout.col#copyright": {
+    "props": {
+      "horizontalAlign": "center",
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#vtexLogo"]
+  },
+  "flex-layout.row#vtexLogo": {
+    "props": {
+      "preventHorizontalStretch": true
+    },
+    "children": ["rich-text#rights"]
+  },
+  "rich-text#rights": {
+    "props": {
+      "text": "Titan Tools B2B 2023 @ All rights reserved",
+      "blockClass": "footerRights"
+    }
+  },
+  "flex-layout.row#paymentImagesDesktop": {
+    "children": [
+      "image#all-cards"
+    ]
+  },
+  "image#all-cards": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3a82deb2-7ee5-4680-8d7f-332975128f9c___b27d951c5d4b66a1312af1caa1cffced.png"
+    }
+  },
+  "link#facebook": {
+    "children": ["image#facebook"],
+    "props": {
+      "href": "//facebook.com",
+      "target": "_blank",
+      "blockClass": "networkLink"
+    }
+  },
+  "link#instagram": {
+    "children": ["image#instagram"],
+    "props": {
+      "href": "//instagram.com",
+      "target": "_blank",
+      "blockClass": "networkLink"
+    }
+  },
+  "image#facebook": {
+    "props": {
+      "src": "assets/icons/facebook-inverted.svg",
+      "blockClass": "networkImage"
+    }
+  },
+  "image#instagram": {
+    "props": {
+      "src": "assets/icons/instagram-inverted.svg",
+      "blockClass": "networkImage"
+    }
+  }
+}

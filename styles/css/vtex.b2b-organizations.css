@@ -1,0 +1,24 @@
+.userWidgetContainer {
+  margin: 0;
+  justify-content: center;
+  height: 100%;
+  background: transparent;
+  padding-bottom: 1rem;
+}
+.userWidgetRow {
+  flex-direction: column;
+  background-color: var(--pamplona);
+}
+.userWidgetLoading {
+  padding: 2.5rem 0;
+}
+.userWidgetContainer :global(.vtex-button) {
+  border-width: 1px;
+}
+.userWidgetContainer :global(.vtex-button):local(:not([disabled])):hover,
+.userWidgetContainer :global(.vtex-button):local(:not([disabled])):focus,
+.userWidgetContainer :global(.vtex-button):local(:not([disabled])):active {
+  background-color: var(--fresh-blue-darkest);
+  border-color: var(--fresh-blue-darkest);
+  color: #fff;
+}

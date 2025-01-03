@@ -1,0 +1,352 @@
+{
+  "store.home": {
+    "children": ["b2b-context#desktop"]
+  },
+  "b2b-context#desktop": {
+    "children": [
+      "check-permission#representative-area",
+      "flex-layout.row#sales-channel-banner",
+      "check-permission#lastOrders",
+      "__fold__",
+      "flex-layout.row#trending",
+      "flex-layout.row#full-banner-desktop1",
+      "flex-layout.row#popular",
+      "__fold__",
+      "flex-layout.row#bannerCoupon",
+      "flex-layout.row#imageBanners",
+      "__fold__",
+      "flex-layout.row#newsletter"
+    ]
+  },
+  "flex-layout.row#sales-channel-banner": {
+    "title": "Sales Channel Banners",
+    "props": {
+      "blockClass": "full-banner",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#sales-channel-banner"]
+  },
+  "flex-layout.col#sales-channel-banner": {
+    "children": ["sales-channel-banner"]
+  },
+  "sales-channel-banner": {
+    "title": "Sales Channel Banners - Images",
+    "children": ["slider-layout#sales-channel-banner"],
+    "props": {
+      "height": 480,
+      "autoplay": 8000,
+      "images": [
+        {
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/0a3856ec-7526-49fc-855b-11efc6c874b0___e3c4775a424ee788c2995d456a751c01.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5487ac22-1ff1-4d58-9e30-a4a988c8b2f0___957589e6ef45be74833cf6635bd37416.jpg",
+          "title": "Hammer Drill Precision Pro",
+          "description": "Hammer Drill Precision Pro",
+          "link": {
+            "url": "/hammer-drill/p"
+          }
+        },
+        {
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/dac1cedb-af74-42e3-a3ed-c6afa9a7bc51___a211971cbc3c3fd34051a4d59e575e5d.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/8b4eca92-5169-4f1f-8892-d8d901835db8___cda09b14331d9f5788718d072a4f45d4.jpg",
+          "title": "Jigsaw Saw",
+          "description": "Jigsaw Saw",
+          "link": {
+            "url": "/precision-pro-fspe-100-jigsaw/p"
+          }
+        },
+        {
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/50bdb1f7-7f14-4aaf-84f2-be7bd1b229be___ee9fac38b7b17e8c9d47d80732c7bb51.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5e4471a0-a66b-4a33-8c87-f1433e001031___7d249a9bcb02fa4519094717817733bc.jpg",
+          "title": "All day work",
+          "description": "All day work",
+          "link": {
+            "url": "/precision-pro-impact-drill/p"
+          }
+        },
+        {
+          "image": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/082d37eb-08d3-4320-aabc-abebcb6accf0___8470d20009f0b649dd975588a574e022.jpg",
+          "mobileImage": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/e9cf961a-9170-4b19-993d-ba36f56f5a4b___42781a35b70ae82bbc13f9dc2ba7b439.jpg",
+          "title": "Cordless Saw",
+          "description": "Cordless Saw",
+          "link": {
+            "url": "/-cordless-reciprocating-saw-precision-pro/p"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#sales-channel-banner": {
+    "title": "Sales Channel Banners - Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always"
+    }
+  },
+  /* Seus Últimos Pedidos */
+  "flex-layout.row#last-orders": {
+    "props": {
+      "blockClass": "last-orders"
+    },
+    "children": ["flex-layout.col#last-orders"]
+  },
+  "flex-layout.col#last-orders": {
+    "props": {
+      "blockClass": "shopByCategory"
+    },
+    "children": [
+      "rich-text#last-orders-title",
+      "responsive-layout.desktop#b2b-last-orders",
+      "responsive-layout.mobile#b2b-last-orders"
+    ]
+  },
+  "rich-text#last-orders-title": {
+    "props": {
+      "text": "### Last Orders [VIEW ALL](/account#/orders-history)",
+      "textPosition": "CENTER",
+      "blockClass": "shopByCategoryTitle"
+    }
+  },
+  "responsive-layout.desktop#b2b-last-orders": {
+    "children": ["flex-layout.row#last-orders-cards-desktop"]
+  },
+  "responsive-layout.mobile#b2b-last-orders": {
+    "children": ["flex-layout.row#last-orders-cards-mobile"]
+  },
+  "flex-layout.row#last-orders-cards-desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["b2b-last-orders#desktop"]
+  },
+  "flex-layout.row#last-orders-cards-mobile": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["b2b-last-orders#mobile"]
+  },
+  "b2b-last-orders#desktop": {
+    "title": "B2B Last Ordes - Desktop",
+    "props": {
+      "limit": 5,
+      "orderDetailsPlacement": "right"
+    }
+  },
+  "b2b-last-orders#mobile": {
+    "title": "B2B Last Ordes - Mobile",
+    "props": {
+      "limit": 3,
+      "orderDetailsPlacement": "top"
+    }
+  },
+  "flex-layout.row#representative-area": {
+    "props": {
+      "blockClass": "representative-area"
+    },
+    "children": ["flex-layout.col#representative-area"]
+  },
+  "flex-layout.col#representative-area": {
+    "props": {
+      "blockClass": "representative-area"
+    },
+    "children": ["b2b-representative-area"]
+  },
+  "b2b-representative-area": {
+    "props": {
+      "individualGoal": 0,
+      "reachedValue": 0,
+      "customersPortfolio": 0,
+      "customersOrdersMonth": 0
+    }
+  },
+  /* New categories section */
+  "link#category-1": {
+    "children": ["image#category-1"],
+    "props": {
+      "label": "Drills",
+      "href": "/tools/drills",
+      "blockClass": "link-category"
+    }
+  },
+  "image#category-1": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3f59575c-3072-4b4c-9ad7-b9658d0d4ce3___44812bfac3f8a71912b8422ff45db087.png"
+    }
+  },
+  "link#category-2": {
+    "children": ["image#category-2"],
+    "props": {
+      "label": "Hand Tools",
+      "href": "/tools/hand-tools",
+      "blockClass": "link-category"
+    }
+  },
+  "image#category-2": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/9aef158b-a49b-40b9-b41c-a2fd98b04b54___a1775255135e4c5ccd71bc1078260c9a.png"
+    }
+  },
+  "link#category-3": {
+    "children": ["image#category-3"],
+    "props": {
+      "label": "Kits",
+      "href": "/Kits?_q=kits&map=ft",
+      "blockClass": "link-category"
+    }
+  },
+  "image#category-3": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/fc01e96d-e505-43ff-8a10-e2f981e58251___bda3fcb3d613789a9aea874f70967b9f.png"
+    }
+  },
+  "link#category-4": {
+    "children": ["image#category-4"],
+    "props": {
+      "label": "Sanders & Grinders",
+      "href": "/Sanders%20and%20Grinders?_q=sanders%20and%20grinders&map=ft",
+      "blockClass": "link-category"
+    }
+  },
+  "image#category-4": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3e00d61f-9f9e-4d2b-95fb-843926f3a8c9___dffe40e4239bc13be7511307d7c063ec.png"
+    }
+  },
+  "link#category-5": {
+    "children": ["image#category-5"],
+    "props": {
+      "label": "Saws",
+      "href": "/tools/saws",
+      "blockClass": "link-category"
+    }
+  },
+  "image#category-5": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/5a364118-2398-4deb-8299-6c96d4c077df___9dff7ad18512fcf377aa0d5fff4cbb70.png"
+    }
+  },
+  "link#category-6": {
+    "children": ["image#category-6"],
+    "props": {
+      "label": "Measuring Tools",
+      "href": "/Measuring%20Tools?_q=measuring%20tools&map=ft",
+      "blockClass": "link-category"
+    }
+  },
+  "image#category-6": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/3058a12e-739f-47a2-b24a-a82f0c7015c9___ffb6802bf62a6bbe8a4748828796d714.png"
+    }
+  },
+  "flex-layout.row#full-banner-desktop1": {
+    "children": ["image#full-banner-desktop1"],
+    "props": {
+      "paddingTop": 8,
+      "paddingBottom": 8,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    },
+    "title": "Full Banner 1"
+  },
+  "image#full-banner-desktop1": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/792d490e-0f8c-4c14-a9a5-743b0a33ee8a___705b59afe79e21dbb946d02d775ed98b.jpg",
+      "alt": "Tool Kits",
+      "title": "Tool Kits",
+      "link": {
+        "url": "/kits"
+      }
+    },
+    "title": "Full Banner 1 - Imagem"
+  },
+  "flex-layout.row#imageBanners": {
+    "title": "3 Columns Image Banners",
+    "props": {
+      "blockClass": "imageBanners",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.col#banner1",
+      "flex-layout.col#banner2",
+      "flex-layout.col#banner3"
+    ]
+  },
+  "flex-layout.col#banner1": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": ["image#banner-1"]
+  },
+  "flex-layout.col#banner2": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": ["image#banner-2"]
+  },
+  "flex-layout.col#banner3": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": ["image#banner-3"]
+  },
+  "image#banner-1": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/c48c9332-13e3-4a9a-a367-087460a86278___4b2ba3c2be87f778bbae074c80dd1b5f.png",
+      "maxHeight": 256,
+      "blockClass": "bannerThird",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#banner-2": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/7ba4886e-c880-477c-af0c-3de5967b26d4___c16505051ea9a14475097bdfd9b2ad5c.png",
+      "maxHeight": 256,
+      "blockClass": "bannerThird",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#banner-3": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/60f093a4-3a35-4152-b748-2888818d1d06___2440e0d5e9ab76533d4b4a3c4fb5a21a.png",
+      "maxHeight": 256,
+      "blockClass": "bannerThird",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "flex-layout.row#bannerCoupon": {
+    "title": "Full Banner 2",
+    "props": {
+      "blockClass": "full-banner",
+      "paddingTop": 8,
+      "fullWidth": true
+    },
+    "children": ["image#full-banner-desktop2"]
+  },
+  "image#full-banner-desktop2": {
+    "props": {
+      "src": "https://vtextitantools.vtexassets.com/assets/vtex.file-manager-graphql/images/81f76a7a-a888-4b93-8554-d8b7c3e44dc8___d2ae5f08a092f3d1ecc80d6c72ed13b7.png",
+      "alt": "10% OFF",
+      "title": "10% OFF",
+      "link": {
+        "url": "#"
+      }
+    },
+    "title": "Full Banner 2 - Imagem"
+  }
+}
