@@ -196,11 +196,6 @@ window.addEventListener("DOMContentLoaded", () => {
       'checkoutRequestBegin.vtex ' +
       'hashchange', () => {
 
-      if (!$('.demo-store-warning').length) {
-          const demoWarning = '<div class="demo-store-warning">Attention! This is a VTEX platform demo store. Products, prices and deliveries are merely illustrative.</div>';
-          $('.summary-template-holder').append(demoWarning);
-      }
-
       if (!$('#continue-shopping-button').length) {
           $('.btn-place-order-wrapper').append($('<a href="/" target="_self" id="continue-shopping-button" class="btn btn-large btn-secondary">Keep buying</a>'));
       }
