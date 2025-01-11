@@ -1,5 +1,5 @@
 {
-  /* Link de cadastrar organização de acordo com as permissões */
+  /* Link de b2bgrupodassr organização de acordo com as permissões */
   "check-permission#reseller": {
     "props": {
       "roles": [
@@ -150,7 +150,7 @@
     }
   },
 
-  /* Link do quickorder ou cadastrar organização de acordo com as permissões */
+  /* Link do quickorder ou b2bgrupodassr organização de acordo com as permissões */
   "check-permission#orderQuote": {
     "props": {
       "roles": [

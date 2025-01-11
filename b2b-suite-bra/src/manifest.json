@@ -1,0 +1,164 @@
+{
+  "vendor": "b2bgrupodass",
+  "name": "b2b-suite-bra",
+  "version": "1.0.21",
+  "title": "B2B Suite Brasil",
+  "description": "Provides blocks for B2B facilities in the storefront",
+  "scripts": {
+    "postreleasy": "vtex publish --force"
+  },
+  "builders": {
+    "react": "3.x",
+    "node": "6.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.apps-graphql": "2.x",
+    "vtex.store-icons": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.responsive-values": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.product-quantity": "1.x",
+    "vtex.css-handles": "0.x",
+    "vtex.store-components": "3.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.store-resources": "0.x",
+    "vtex.styleguide": "9.x",
+    "vtex.order-manager": "0.x",
+    "vtex.checkout-resources": "0.x",
+    "vtex.pixel-manager": "1.x",
+    "vtex.format-currency": "0.x",
+    "vtex.overlay-layout": "0.x",
+    "vtex.b2b-organizations-graphql": "0.x",
+    "vtex.storefront-permissions": "1.x",
+    "vtex.store-image": "0.x",
+    "ssesandbox04.progressive-discount-table": "2.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "POWER_USER_DS"
+    },
+    {
+      "name": "OMSViewer"
+    },
+    {
+      "name": "ListOrders"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/{{account}}/pricing/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/profile-system/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "kubernetes.default.svc.cluster.local",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "infra.io.vtex.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "Sku.aspx"
+    },
+    {
+      "name": "read_prices"
+    },
+    {
+      "name": "ADMIN_CRM"
+    },
+    {
+      "name": "POWER_USER_CRM"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "*",
+        "path": "*"
+      }
+    },
+    {
+      "name": "graphql-query"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "sheets.googleapis.com",
+        "path": "/v4/spreadsheets/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "googleapis.com",
+        "path": "/oauth2/v4/*"
+      }
+    }
+  ],
+  "settingsSchema": {
+    "title": "Google Sheets API Settings",
+    "type": "object",
+    "properties": {
+      "service_account_credentials_json": {
+        "title": "Google API Service Account Credentials JSON",
+        "type": "string",
+        "description": "Paste entire Google API Service Account Credentials JSON"
+      },
+      "google_sheet_id": {
+        "title": "Sales Representative Goals Google Sheet ID",
+        "type": "string",
+        "description": "Find the ID in the Google Sheet URL: https://docs.google.com/spreadsheets/d/{{ Google Sheet ID }}/edit"
+      },
+      "tab_title": {
+        "title": "Tab Title (optional)",
+        "type": "string",
+        "description": "The worksheet tab where data will be fetched."
+      },
+      "default_goal": {
+        "title": "Default value when a goal is not found in sheet (optional)",
+        "description": "Insert the desired numerical value, using a dot (.) or comma (,) as decimal separator. For values greater than 1000, you can use the thousands separator (dot or comma). Examples of valid formats for one thousand and fifty cents of your currency: 1000,50, 1000,5, 1000.50, 1000.5, 1,000.50, 1,000.5.",
+        "type": "string"
+      }
+    }
+  },
+  "billingOptions": {
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

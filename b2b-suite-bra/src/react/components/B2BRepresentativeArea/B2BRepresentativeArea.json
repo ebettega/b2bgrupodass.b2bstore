@@ -1,0 +1,23 @@
+[
+  {
+    "id": "store/representative-area.title"
+  },
+  {
+    "id": "store/representative-area.individualGoal"
+  },
+  {
+    "id": "store/representative-area.customersPortfolio"
+  },
+  {
+    "id": "store/representative-area.remainingDaysInMonth"
+  },
+  {
+    "id": "store/representative-area.reachedValue"
+  },
+  {
+    "id": "store/representative-area.customersOrdersMonth"
+  },
+  {
+    "id": "store/representative-area.lastOrder"
+  }
+]

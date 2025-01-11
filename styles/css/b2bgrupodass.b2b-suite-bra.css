@@ -135,3 +135,14 @@
   line-height: 1.25 !important;
   color: var(--black-medium) !important;
 }
+
+.skuContentWrapper {
+  position: relative;
+}
+
+.visualizeButton{
+  background: transparent;
+  border: 0;
+  color: #001432;
+  cursor: pointer !important;
+}

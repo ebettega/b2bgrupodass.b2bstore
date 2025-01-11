@@ -1,6 +1,6 @@
 :local(:root) {
   /* Colors */
-  --black-dark: #142032;
+  --black-dark: #211916;
   --fresh-blue: #4a596b;
   --fresh-blue-dark: #0067c7;
   --fresh-blue-lightest: #f3f9ff;
@@ -12,15 +12,15 @@
   --b2b-header-blue-medium: #fff;
   --blue-medium: #597298;
   --b2b-blue-darkest: #1b3255;
-  --lines-dark: #bdc9d6;
+  --lines-dark: #999999;
   --lines-darker: #a3afbc;
-  --lines-light: #dee7ef;
+  --lines-light: #999999;
   --serious-blue-dark: var(--fresh-blue);
   --serious-black: #3c4043;
   --serious-orange: #ff7d30;
   --base: #fff;
   --near-white: #f8f7fc;
-  --pamplona: #1c5f6d;
+  --pamplona: #211916;
     /* Transitions */
     --default-transition: all 0.3s ease;
 }

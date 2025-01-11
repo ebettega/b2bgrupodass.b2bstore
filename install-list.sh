@@ -30,5 +30,5 @@ vtex install vtex.storefront-permissions@1.x
 vtex install vtex.telemarketing@2.x
 vtex install ssesandbox04.threekit-app@0.x
 vtex install ssesandbox04.seller-page@0.x
-vtex install ssesandbox04.b2b-suite-bra@1.x
+vtex install b2bgrupodass.b2b-suite-bra@1.x
 vtex install vtex.affiliates@1.x

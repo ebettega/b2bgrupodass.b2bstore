@@ -1,0 +1,17 @@
+[
+  {
+    "id": "store/product-quantity.quantity"
+  },
+  {
+    "id": "store/representative-area.reachedValue"
+  },
+  {
+    "id": "store/representative-area.moreStats"
+  },
+  {
+    "id": "store/representative-area.reachedValueTimeSeries"
+  },
+  {
+    "id": "store/representative-area.topSellingProducts"
+  }
+]

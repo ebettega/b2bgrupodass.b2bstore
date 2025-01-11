@@ -1,0 +1,77 @@
+{
+  "monthlyOrders": {
+    "path": "/_v/private/b2b-suite-bra/monthly-orders",
+    "public": true,
+    "policies": [
+      {
+        "effect": "allow",
+        "actions": [
+          "get",
+          "options"
+        ]
+      }
+    ],
+    "version": "1.0.1",
+    "releasedAt": 1690836323632
+  },
+  "orders": {
+    "path": "/_v/private/b2b-suite-bra/orders",
+    "public": true,
+    "policies": [
+      {
+        "effect": "allow",
+        "actions": [
+          "get",
+          "options"
+        ]
+      }
+    ],
+    "version": "1.0.1",
+    "releasedAt": 1690836323632
+  },
+  "order": {
+    "path": "/_v/private/b2b-suite-bra/orders/:orderId",
+    "public": true,
+    "policies": [
+      {
+        "effect": "allow",
+        "actions": [
+          "get",
+          "options"
+        ]
+      }
+    ],
+    "version": "1.0.1",
+    "releasedAt": 1690836323632
+  },
+  "status": {
+    "path": "/_v/status/:code",
+    "public": true,
+    "version": "1.0.0",
+    "releasedAt": 1690747545226
+  },
+  "graphqlPrivate1": {
+    "handler": "vtex.graphql-server@1.x/graphql",
+    "headers": {},
+    "path": "/_v/private/graphql/v1",
+    "public": true,
+    "version": "1.0.0",
+    "releasedAt": 1690747545226
+  },
+  "graphqlPublic1": {
+    "handler": "vtex.graphql-server@1.x/graphql",
+    "headers": {},
+    "path": "/_v/public/graphql/v1",
+    "public": true,
+    "version": "1.0.0",
+    "releasedAt": 1690747545226
+  },
+  "graphqlSegment1": {
+    "handler": "vtex.graphql-server@1.x/graphql",
+    "headers": {},
+    "path": "/_v/segment/graphql/v1",
+    "public": true,
+    "version": "1.0.0",
+    "releasedAt": 1690747545226
+  }
+}

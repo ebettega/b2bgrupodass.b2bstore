@@ -25,3 +25,7 @@
   font-size: 12px;
   margin-top: 8px;
 }
+
+.multipleItemQuantitySelector :global(.vtex-numeric-stepper__plus-button__text){display: none;}
+
+.multipleItemQuantitySelector :global(.vtex-numeric-stepper__minus-button__text){display: none;}

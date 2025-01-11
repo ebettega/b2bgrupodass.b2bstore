@@ -1,0 +1,95 @@
+[
+  {
+    "id": "admin/editor.sku-list.highlights.title"
+  },
+  {
+    "id": "admin/editor.sku-list.highlights.description"
+  },
+  {
+    "id": "admin/editor.sku-list.highlights.default"
+  },
+  {
+    "id": "admin/editor.sku-list.highlights.allSpecifications"
+  },
+  {
+    "id": "admin/editor.sku-list.highlights.chooseDefaultSpecification"
+  },
+  {
+    "id": "admin/editor.sku-list.highlights.typeSpecifications.title"
+  },
+  {
+    "id": "admin/editor.sku-list.highlights.showHighlight.title"
+  },
+  {
+    "id": "admin/editor.sku-list.highlights.showLabel.title"
+  },
+  {
+    "id": "admin/editor.sku-list.inventory.title"
+  },
+  {
+    "id": "admin/editor.sku-list.inventory.description"
+  },
+  {
+    "id": "admin/editor.sku-list.inventory.showLabel.title"
+  },
+  {
+    "id": "admin/editor.sku-list.item-quantity.title"
+  },
+  {
+    "id": "admin/editor.sku-list.item-quantity.description"
+  },
+  {
+    "id": "admin/editor.sku-list.item-quantity.inputType.title"
+  },
+  {
+    "id": "admin/editor.sku-list.item-quantity.inputType.stepper"
+  },
+  {
+    "id": "admin/editor.sku-list.item-quantity.inputType.number"
+  },
+  {
+    "id": "admin/editor.sku-list.item-quantity.showLabel.title"
+  },
+  {
+    "id": "admin/editor.store-image.title"
+  },
+  {
+    "id": "admin/editor.store-image.src.title"
+  },
+  {
+    "id": "admin/editor.store-image.alt.title"
+  },
+  {
+    "id": "admin/editor.store-image.title.title"
+  },
+  {
+    "id": "admin/editor.store-image.title.description"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.salesChannels.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.salesChannels.description"
+  },
+  {
+    "id": "admin/editor.image-slider.title"
+  },
+  {
+    "id": "admin/editor.image-slider.description"
+  },
+  {
+    "id": "admin/editor.image-slider.slider.title"
+  },
+  {
+    "id": "admin/editor.image-slider.slider.infinite"
+  },
+  {
+    "id": "admin/editor.image-slider.slider.showNavigation"
+  },
+  {
+    "id": "admin/editor.image-slider.slider.showPaginationDots"
+  },
+  {
+    "id": "admin/editor.image-slider.slider.usePagination"
+  }
+]

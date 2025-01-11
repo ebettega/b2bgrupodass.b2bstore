@@ -1,0 +1,20 @@
+[
+  {
+    "id": "store/last-orders.noOrder"
+  },
+  {
+    "id": "store/last-orders.orderNumber"
+  },
+  {
+    "id": "store/last-orders.orderMadeBy"
+  },
+  {
+    "id": "store/last-orders.date"
+  },
+  {
+    "id": "store/last-orders.moreDetails"
+  },
+  {
+    "id": "store/last-orders.orderAgain"
+  }
+]

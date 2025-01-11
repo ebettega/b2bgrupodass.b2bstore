@@ -1,0 +1,77 @@
+[
+  {
+    "id": "store/order-status.order-accepted"
+  },
+  {
+    "id": "store/order-status.order-created"
+  },
+  {
+    "id": "store/order-status.cancel"
+  },
+  {
+    "id": "store/order-status.on-order-completed"
+  },
+  {
+    "id": "store/order-status.on-order-completed-ffm"
+  },
+  {
+    "id": "store/order-status.approve-payment"
+  },
+  {
+    "id": "store/order-status.payment-pending"
+  },
+  {
+    "id": "store/order-status.payment-approved"
+  },
+  {
+    "id": "store/order-status.request-cancel"
+  },
+  {
+    "id": "store/order-status.canceled"
+  },
+  {
+    "id": "store/order-status.window-to-change-payment"
+  },
+  {
+    "id": "store/order-status.window-to-change-seller"
+  },
+  {
+    "id": "store/order-status.waiting-for-authorization"
+  },
+  {
+    "id": "store/order-status.waiting-ffmt-authorization"
+  },
+  {
+    "id": "store/order-status.waiting-for-manual-authorization"
+  },
+  {
+    "id": "store/order-status.authorize-fulfillment"
+  },
+  {
+    "id": "store/order-status.window-to-cancel"
+  },
+  {
+    "id": "store/order-status.invoice"
+  },
+  {
+    "id": "store/order-status.invoiced"
+  },
+  {
+    "id": "store/order-status.ready-for-handling"
+  },
+  {
+    "id": "store/order-status.start-handling"
+  },
+  {
+    "id": "store/order-status.cancellation-requested"
+  },
+  {
+    "id": "store/order-status.handling"
+  },
+  {
+    "id": "store/order-status.waiting-for-mkt-authorization"
+  },
+  {
+    "id": "store/order-status.waiting-seller-handling"
+  }
+]

@@ -534,7 +534,9 @@
   margin-right: 16px;
   min-width: 64px;
 }
-
+.flexRow--skuListHeader{
+  display: none;
+}
 .flexRowContent--skuListHeader {
   padding: 0.25rem 1rem;
   border-top-left-radius: 0.25rem;

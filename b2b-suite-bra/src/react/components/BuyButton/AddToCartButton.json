@@ -1,0 +1,23 @@
+[
+  {
+    "id": "store/add-to-cart.success"
+  },
+  {
+    "id": "store/add-to-cart.duplicate"
+  },
+  {
+    "id": "store/add-to-cart.failure"
+  },
+  {
+    "id": "store/add-to-cart.see-cart"
+  },
+  {
+    "id": "store/add-to-cart.add-to-cart"
+  },
+  {
+    "id": "store/buyButton-label-unavailable"
+  },
+  {
+    "id": "store/add-to-cart.select-sku-variations"
+  }
+]

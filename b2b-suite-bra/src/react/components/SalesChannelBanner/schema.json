@@ -1,0 +1,71 @@
+[
+  {
+    "id": "admin/editor.sales-channel-banner.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.description"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.image.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.mobileImage.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.description.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.title.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.link.url.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.link.openNewTab.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.link.noFollow.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.link.title.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.height.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.heightMobile.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.autoplay.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.autoplay.description"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.width.title"
+  },
+  {
+    "id": "admin/editor.sales-channel-banner.images.width.description"
+  },
+  {
+    "id": "admin/editor.image.analytics.title"
+  },
+  {
+    "id": "admin/editor.image.analytics.none"
+  },
+  {
+    "id": "admin/editor.image.analytics.provide"
+  },
+  {
+    "id": "admin/editor.image.analytics.promotionId"
+  },
+  {
+    "id": "admin/editor.image.analytics.promotionName"
+  },
+  {
+    "id": "admin/editor.image.analytics.promotionPosition"
+  }
+]
