@@ -66,11 +66,19 @@
       "flex-layout.col#search-bar",
       "link#quickOrder",
       "login",
+     "check-permission#price-table",
       // "flex-layout.col#permission-description",
       "minicart.v2"
     ]
   },
-
+  "check-permission#price-table": {
+    "props": {
+      "roles": [
+        "sales-representative"
+      ],
+       "AllowedContent": "price-table-selector"
+    }
+  },
   "flex-layout.col#permission-description": {
     "props": {
       "blockClass": "permission-description"
