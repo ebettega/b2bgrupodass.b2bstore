@@ -43,7 +43,7 @@
       },
       buildButton: function buildButton() {
         return $(
-          '<button class="jsSubmitFakeButton btn btn-success btn-large btn-block">\n        <i class="icon-lock"></i>\n        <i class="icon-spinner icon-spin" style="display: none;"></i>\n        <span>Place Order</span>\n      </button>'
+          '<button class="jsSubmitFakeButton btn btn-success btn-large btn-block">\n        <i class="icon-lock"></i>\n        <i class="icon-spinner icon-spin" style="display: none;"></i>\n        <span>Finalizar Compra</span>\n      </button>'
         );
       },
       hideLoadingAndResetButton: function hideLoadingAndResetButton() {
@@ -80,7 +80,7 @@
       },
       buildInput: function buildInput() {
         return $(
-          '\n        <div style="\n          padding-right: 15px;\n          margin-bottom: 10px;\n        " id="poWrap">\n        <label> Purchase Order Number: (optional) </label>\n          <input \n            type="text"\n            id="poNumberInput" style="\n            font-size: 20px;\n            height: 36px;\n            line-height: 34px;\n            width: 100%;" \n            name="poNumber">\n          <span class="help error feedback" style="display: none">This field is required.</span>\n        </div>'
+          '\n        <div style="\n          padding-right: 15px;\n          margin-bottom: 10px;\n        " id="poWrap">\n        <label> Número do pedido de compra: (opcional) </label>\n          <input \n            type="text"\n            id="poNumberInput" style="\n            font-size: 20px;\n            height: 36px;\n            line-height: 34px;\n            width: 100%;" \n            name="poNumber">\n          <span class="help error feedback" style="display: none">This field is required.</span>\n        </div>'
         );
       },
       showError: function showError() {
@@ -146,7 +146,6 @@
           fakeSubmitButton.hideLoadingAndResetButton();
         });
         vtexjs.checkout.getOrderForm().then(function (data) {
-          console.log("here: " + poNumber.value);
 
           if (!!poNumber.value) {
             $.ajax({
@@ -195,11 +194,6 @@ window.addEventListener("DOMContentLoaded", () => {
       'componentDone.vtex ' +
       'checkoutRequestBegin.vtex ' +
       'hashchange', () => {
-
-      if (!$('.demo-store-warning').length) {
-          const demoWarning = '<div class="demo-store-warning">Attention! This is a VTEX platform demo store. Products, prices and deliveries are merely illustrative.</div>';
-          $('.summary-template-holder').append(demoWarning);
-      }
 
       if (!$('#continue-shopping-button').length) {
           $('.btn-place-order-wrapper').append($('<a href="/" target="_self" id="continue-shopping-button" class="btn btn-large btn-secondary">Keep buying</a>'));

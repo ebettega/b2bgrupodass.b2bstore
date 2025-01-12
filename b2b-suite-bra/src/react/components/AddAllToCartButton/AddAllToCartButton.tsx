@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import type { FC } from 'react'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useMutation } from 'react-apollo'
 import { defineMessages, useIntl } from 'react-intl'
 import { addToCart as ADD_TO_CART } from 'vtex.checkout-resources/Mutations'
@@ -11,6 +11,7 @@ import useProduct from 'vtex.product-context/useProduct'
 import { Button, ToastConsumer, ToastProvider } from 'vtex.styleguide'
 
 import type { Item, OrderFormArgs, OrderFormItemInput } from '../../typings'
+import { useProviderWhiteLabel } from '../ProviderWhiteLabel/ProviderWhiteLabel'
 
 const messages = defineMessages({
   label: {
@@ -24,6 +25,7 @@ const messages = defineMessages({
 const AddAllToCartButton: FC = () => {
   const handles = useCssHandles(['addToCartButtonContainer'])
   const productContext = useProduct()
+  const provider = useProviderWhiteLabel()
 
   // eslint-disable-next-line prettier/prettier
   const selectedItemsInitialState: Item[] = productContext.product.items?.map(
@@ -75,7 +77,6 @@ const AddAllToCartButton: FC = () => {
   //     console.log(`${item.name} - ${item.quantity}`)
   //   })
   // }, [selectedItems])
-
   const haveAllItemsQuantityZero = () =>
     selectedItems.every(item => item.quantity === 0)
 
@@ -88,7 +89,7 @@ const AddAllToCartButton: FC = () => {
           .map(item => ({
             id: +item.itemId,
             quantity: +item.quantity,
-            seller: item.sellers[0].sellerId.toString(),
+            seller: provider.seller
           })),
       },
     })

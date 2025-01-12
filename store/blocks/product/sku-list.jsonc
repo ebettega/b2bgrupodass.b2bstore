@@ -192,7 +192,8 @@
       "flex-layout.col#sku-highlight-size",
       "flex-layout.col#sku-price",
       "flex-layout.col#sku-inventory",
-      "flex-layout.col#sku-quantity-selector"
+      "flex-layout.col#sku-quantity-selector",
+      "flex-layout.col#sku-supply-lots"
     ]
   },
 
@@ -290,6 +291,15 @@
     "children": ["sku-quantity-selector"]
   },
 
+  "flex-layout.col#sku-supply-lots": {
+    "props": {
+      "width": "25%",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": ["sku-supply-lots"]
+  },
+
   "flex-layout.col#sku-quantity-selector-price-by-quantity": {
     "props": {
       "width": "15%",
@@ -357,7 +367,7 @@
     ]
   },
 
-  "flex-layout.col#quantity-inventory":{
+  "flex-layout.col#quantity-inventory": {
     "children": [
       "flex-layout.col#sku-inventory-mobile",
       "flex-layout.col#sku-quantity-selector-mobile"
@@ -378,7 +388,7 @@
       "horizontalAlign": "center",
       "verticalAlign": "middle"
     },
-    "children": [/*"sku-highlights#size-mobile"*/"sku-name#mobile"]
+    "children": [/*"sku-highlights#size-mobile"*/ "sku-name#mobile"]
   },
 
   "sku-name#mobile": {

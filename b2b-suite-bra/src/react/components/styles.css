@@ -11,6 +11,16 @@
   gap: 8px;
 }
 
+.selectContainer {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(221, 221, 221);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
 .tab-button {
   padding: 10px 20px;
   cursor: pointer;
