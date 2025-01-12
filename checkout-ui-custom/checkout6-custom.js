@@ -146,7 +146,6 @@
           fakeSubmitButton.hideLoadingAndResetButton();
         });
         vtexjs.checkout.getOrderForm().then(function (data) {
-          console.log("here: " + poNumber.value);
 
           if (!!poNumber.value) {
             $.ajax({

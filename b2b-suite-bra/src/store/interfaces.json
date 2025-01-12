@@ -37,7 +37,7 @@
   "sku-inventory": {
     "component": "SkuInventory"
   },
-  "sku-supply-lots":{
+  "sku-supply-lots": {
     "component": "SkuSupplyLots"
   },
   "sku-image": {
@@ -75,6 +75,9 @@
   "sku-buy-button": {
     "component": "SkuBuyButton",
     "allowed": ["item-buy-button"]
+  },
+  "provider-white-label": {
+    "component": "ProviderWhiteLabelContext"
   },
   "buy-seller-box": {
     "component": "BuySeller"

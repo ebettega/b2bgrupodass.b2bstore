@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import { Spinner } from "vtex.styleguide";
 import { useSku } from "../SkuContext";
 import styles from "./SkuSupplyLots.css";
 
 function SkuSupplyLots() {
   const { sku } = useSku();
-
+  const hasAttachments = sku.attachments && sku.attachments.length > 0;
   const [quantity, setQuantity] = useState(null);
   const [supplyDate, setSupplyDate] = useState("");
 
@@ -40,12 +41,18 @@ function SkuSupplyLots() {
 
   return (
     <div className={styles.skuSupplyLotsContainer}>
-      {quantity !== null ? (
-        <span>
-          Estoque futuro: {quantity} {supplyDate}
-        </span>
+      {hasAttachments ? (
+        <span>Não tem estoque futuro</span>
       ) : (
-        ""
+        <>
+          {quantity !== null ? (
+            <span>
+              Estoque futuro: {quantity} {supplyDate}
+            </span>
+          ) : (
+            <Spinner />
+          )}
+        </>
       )}
     </div>
   );

@@ -1,11 +1,17 @@
 import { path, pathOr } from "ramda";
-import React, { FunctionComponent, useContext, useEffect, useState } from "react";
+import React, {
+  FunctionComponent,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { useDevice } from "vtex.device-detector";
 import { ProductContext } from "vtex.product-context";
 import { ExtensionPoint } from "vtex.render-runtime";
 import s from "./styles.css";
 
 import { Item, Product } from "../typings";
+import { useProviderWhiteLabel } from "./ProviderWhiteLabel/ProviderWhiteLabel";
 
 enum Device {
   mobile = "mobile",
@@ -22,10 +28,14 @@ const compareItemsSequence = (a: Item, b: Item) =>
   getSkuDisplaySequence(a) - getSkuDisplaySequence(b);
 
 const SkuListComponent = React.memo(({ device }: { device: Device }) => {
+  const provider = useProviderWhiteLabel();
   const valuesFromContext = useContext(ProductContext);
   const items: Item[] = pathOr([], ["product", "items"], valuesFromContext);
   const product: Product | undefined = path(["product"], valuesFromContext);
-  const selectedItem: Item | undefined = path(["selectedItem"], valuesFromContext);
+  const selectedItem: Item | undefined = path(
+    ["selectedItem"],
+    valuesFromContext
+  );
   const sortedItems = [...items].sort(compareItemsSequence);
 
   const itemsWithAttachments = sortedItems.filter(
@@ -38,7 +48,9 @@ const SkuListComponent = React.memo(({ device }: { device: Device }) => {
   const [activeTab, setActiveTab] = useState<
     "withAttachments" | "withoutAttachments"
   >(() =>
-    selectedItem && selectedItem.attachments && selectedItem.attachments.length > 0
+    selectedItem &&
+    selectedItem.attachments &&
+    selectedItem.attachments.length > 0
       ? "withAttachments"
       : "withoutAttachments"
   );
@@ -97,13 +109,21 @@ const SkuListComponent = React.memo(({ device }: { device: Device }) => {
     border: "1px solid #001432",
   };
 
+  const mockSelles = [
+    { value: "1", label: "Seller principal" },
+    { value: "b2bgrupodasswl01", label: "Grupo Dass 1" },
+    { value: "b2bgrupodasswl02", label: "Grupo Dass 2" },
+  ];
+
   return (
     <div className={s["sku-list-container"]}>
       {itemsWithAttachments.length ? (
         <div className={s["tab-header"]}>
           <button
             style={
-              activeTab === "withAttachments" ? activeButtonStyles : buttonStyles
+              activeTab === "withAttachments"
+                ? activeButtonStyles
+                : buttonStyles
             }
             onClick={() => setActiveTab("withAttachments")}
           >
@@ -111,12 +131,29 @@ const SkuListComponent = React.memo(({ device }: { device: Device }) => {
           </button>
           <button
             style={
-              activeTab === "withoutAttachments" ? activeButtonStyles : buttonStyles
+              activeTab === "withoutAttachments"
+                ? activeButtonStyles
+                : buttonStyles
             }
             onClick={() => setActiveTab("withoutAttachments")}
           >
             Grade Aberta
           </button>
+          <select
+            className={s.selectContainer}
+            onChange={(e) => {
+              provider.setSeller(e.target.value);
+            }}
+            name="unidadeDeFaturamento"
+            id="unidade-de-faturamento"
+          >
+            <option value="" disabled selected>
+              Selecione a Unidade de Faturamento
+            </option>
+            {mockSelles.map((seller) => (
+              <option value={seller.value}>{seller.label}</option>
+            ))}
+          </select>
         </div>
       ) : (
         <></>

@@ -3,7 +3,15 @@
     "children": [
       "responsive-layout.mobile#product",
       "responsive-layout.desktop#product"
-    ]
+    ],
+    "parent": {
+      "storeWrapper": "storeWrapper#product"
+    }
+  },
+  "storeWrapper#product": {
+    "props": {
+      "CustomContext": "provider-white-label"
+    }
   },
   "condition-layout.product#ThreekitMobile": {
     "props": {
