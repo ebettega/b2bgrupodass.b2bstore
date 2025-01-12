@@ -12,16 +12,7 @@ function SkuSupplyLots() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `/api/logistics/pvt/inventory/items/${sku.itemId}/warehouses/1_1/supplyLots`,
-          {
-            method: "get",
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json; charset=utf-8",
-              VtexIdclientAutCookie:
-                "eyJhbGciOiJFUzI1NiIsImtpZCI6IjFENjE1M0E4Qzc4MjlBMkRDRDBBNzM0MzU3QzJBQzQ1NTcyQTc0NDYiLCJ0eXAiOiJqd3QifQ.eyJzdWIiOiJ3ZWxsaW5ndG9ud3BlZHJvQGdtYWlsLmNvbSIsImFjY291bnQiOiJiMmJncnVwb2Rhc3MiLCJhdWRpZW5jZSI6ImFkbWluIiwic2VzcyI6IjkxNDQzYWI2LWQwNDgtNDlmYi04ODFmLTc1ZjRkMDRiMTJhZiIsImV4cCI6MTczNjcwNTI0MywidHlwZSI6InVzZXIiLCJ1c2VySWQiOiI2YjBiM2I1ZC0yYjU5LTQ3ZDktYjg4Zi1hZWQ1NjMwNTI1NDgiLCJpYXQiOjE3MzY2MTg4NDMsImlzUmVwcmVzZW50YXRpdmUiOmZhbHNlLCJpc3MiOiJ0b2tlbi1lbWl0dGVyIiwianRpIjoiOTc0MTllZTUtNTllMy00Yzc2LWI4MzUtNmM5ZWMzYzMyOTIyIn0.vHBkqWt1hB6xowoU2sNARikQyflgfF8LErEI2c67_X-8UCSfu60j6F7NcTzv8g7Qr1aN1TTbxUspL-zPcUZKHQ",
-            },
-          }
+          `/api/logistics/pvt/inventory/items/${sku.itemId}/warehouses/1_1/supplyLots`
         );
 
         if (!response.ok) {
@@ -29,7 +20,6 @@ function SkuSupplyLots() {
         }
 
         const data = await response.json();
-        console.log("data", data);
         setQuantity(data[0].totalQuantity);
         if (data[0].dateOfSupplyUtc) {
           const date = new Date(data[0].dateOfSupplyUtc);

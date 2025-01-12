@@ -1,5 +1,5 @@
 import { path, pathOr } from "ramda";
-import React, { FunctionComponent, useContext, useState, useEffect } from "react";
+import React, { FunctionComponent, useContext, useEffect, useState } from "react";
 import { useDevice } from "vtex.device-detector";
 import { ProductContext } from "vtex.product-context";
 import { ExtensionPoint } from "vtex.render-runtime";
