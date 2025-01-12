@@ -19,26 +19,17 @@
 }
 
 .btn-success,
-body.js-vcustom-hideEmailStep
-  .client-profile-data
-  .accordion-toggle
-  > span:before,
-body.v-custom-step-payment
-  .payment-data
-  .accordion-toggle
-  > span:not(.payment-edit-link):before,
+body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before,
+body.v-custom-step-payment .payment-data .accordion-toggle>span:not(.payment-edit-link):before,
 body.v-custom-step-shipping .shipping-data .accordion-toggle:before,
-body.v-custom-step-profile .client-profile-data .accordion-toggle > span:before,
+body.v-custom-step-profile .client-profile-data .accordion-toggle>span:before,
 body.v-custom-step-email .client-pre-email h3.client-pre-email-h span:before,
 body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before,
 body.v-custom-step-payment .client-pre-email h3.client-pre-email-h span:before,
-body.v-custom-step-payment .client-profile-data .accordion-toggle > span:before,
+body.v-custom-step-payment .client-profile-data .accordion-toggle>span:before,
 body.v-custom-step-payment .shipping-data .accordion-toggle:before,
 body.v-custom-step-shipping .client-pre-email h3.client-pre-email-h span:before,
-body.v-custom-step-shipping
-  .client-profile-data
-  .accordion-toggle
-  > span:before,
+body.v-custom-step-shipping .client-profile-data .accordion-toggle>span:before,
 body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before {
   background: var(--color-primary) !important;
   border-color: var(--color-primary) !important;
@@ -53,295 +44,64 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before {
 
 .btn-secondary,
 .orderform-template-holder #payment-data #btn-add-gift-card,
-.orderform-template-holder
-  #payment-data
-  .payment-discounts-list
-  table
-  td.action
-  a,
+.orderform-template-holder #payment-data .payment-discounts-list table td.action a,
 .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn,
-.cart-more-options
-  .srp-container
-  .vtex-shipping-preview-0-x-pc
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .cart-more-options
-  .srp-container
-  .vtex-shipping-preview-0-x-pc
-  a,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  button[type="submit"],
+.cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc a,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type="submit"],
 .table.cart-items tbody tr td .product-service input[type="submit"],
 .table.cart-items tbody tr td.product-name .add-service.btn,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a.add-service,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .table.cart-items
-  tbody
-  tr
-  td.product-name
-  a.add-service,
+.table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.add-service,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.add-service,
 .table.cart-items tbody tr td.product-name .clone-item.btn,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a.clone-item,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .table.cart-items
-  tbody
-  tr
-  td.product-name
-  a.clone-item,
+.table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.clone-item,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.clone-item,
 .table.cart-items tbody tr td.product-name .add-item-attachment-container a,
 .btn-secondary:hover,
 .orderform-template-holder #payment-data #btn-add-gift-card:hover,
-.orderform-template-holder
-  #payment-data
-  .payment-discounts-list
-  table
-  td.action
-  a:hover,
+.orderform-template-holder #payment-data .payment-discounts-list table td.action a:hover,
 .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn:hover,
-.cart-more-options
-  .srp-container
-  .vtex-shipping-preview-0-x-pc
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a:hover,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .cart-more-options
-  .srp-container
-  .vtex-shipping-preview-0-x-pc
-  a:hover,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  button[type="submit"]:hover,
+.cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a:hover,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc a:hover,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type="submit"]:hover,
 .table.cart-items tbody tr td .product-service input[type="submit"]:hover,
 .table.cart-items tbody tr td.product-name .add-service.btn:hover,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a.add-service:hover,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .table.cart-items
-  tbody
-  tr
-  td.product-name
-  a.add-service:hover,
+.table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.add-service:hover,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.add-service:hover,
 .table.cart-items tbody tr td.product-name .clone-item.btn:hover,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a.clone-item:hover,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .table.cart-items
-  tbody
-  tr
-  td.product-name
-  a.clone-item:hover,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .add-item-attachment-container
-  a:hover,
+.table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.clone-item:hover,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.clone-item:hover,
+.table.cart-items tbody tr td.product-name .add-item-attachment-container a:hover,
 .btn-secondary:focus,
 .orderform-template-holder #payment-data #btn-add-gift-card:focus,
-.orderform-template-holder
-  #payment-data
-  .payment-discounts-list
-  table
-  td.action
-  a:focus,
+.orderform-template-holder #payment-data .payment-discounts-list table td.action a:focus,
 .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn:focus,
-.cart-more-options
-  .srp-container
-  .vtex-shipping-preview-0-x-pc
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a:focus,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .cart-more-options
-  .srp-container
-  .vtex-shipping-preview-0-x-pc
-  a:focus,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  button[type="submit"]:focus,
+.cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a:focus,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc a:focus,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type="submit"]:focus,
 .table.cart-items tbody tr td .product-service input[type="submit"]:focus,
 .table.cart-items tbody tr td.product-name .add-service.btn:focus,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a.add-service:focus,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .table.cart-items
-  tbody
-  tr
-  td.product-name
-  a.add-service:focus,
+.table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.add-service:focus,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.add-service:focus,
 .table.cart-items tbody tr td.product-name .clone-item.btn:focus,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a.clone-item:focus,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .table.cart-items
-  tbody
-  tr
-  td.product-name
-  a.clone-item:focus,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .add-item-attachment-container
-  a:focus,
+.table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.clone-item:focus,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.clone-item:focus,
+.table.cart-items tbody tr td.product-name .add-item-attachment-container a:focus,
 .btn-secondary:active,
 .orderform-template-holder #payment-data #btn-add-gift-card:active,
-.orderform-template-holder
-  #payment-data
-  .payment-discounts-list
-  table
-  td.action
-  a:active,
+.orderform-template-holder #payment-data .payment-discounts-list table td.action a:active,
 .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn:active,
-.cart-more-options
-  .srp-container
-  .vtex-shipping-preview-0-x-pc
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a:active,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .cart-more-options
-  .srp-container
-  .vtex-shipping-preview-0-x-pc
-  a:active,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  button[type="submit"]:active,
+.cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a:active,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc a:active,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type="submit"]:active,
 .table.cart-items tbody tr td .product-service input[type="submit"]:active,
 .table.cart-items tbody tr td.product-name .add-service.btn:active,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a.add-service:active,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .table.cart-items
-  tbody
-  tr
-  td.product-name
-  a.add-service:active,
+.table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.add-service:active,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.add-service:active,
 .table.cart-items tbody tr td.product-name .clone-item.btn:active,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  a.clone-item:active,
-.summary-template-holder
-  .summary-coupon
-  fieldset.coupon-fieldset
-  .coupon-data
-  .table.cart-items
-  tbody
-  tr
-  td.product-name
-  a.clone-item:active,
-.table.cart-items
-  tbody
-  tr
-  td.product-name
-  .add-item-attachment-container
-  a:active,
+.table.cart-items tbody tr td.product-name .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a.clone-item:active,
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .table.cart-items tbody tr td.product-name a.clone-item:active,
+.table.cart-items tbody tr td.product-name .add-item-attachment-container a:active,
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus,
@@ -353,26 +113,13 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before {
 body a,
 .orderform-template .cart-template.mini-cart #go-to-cart-button,
 .summary-template-holder tfoot tr td.monetary,
-.orderform-template
-  .cart-template.mini-cart
-  .summary-totalizers
-  tfoot
-  tr
-  td.monetary,
+.orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td.monetary,
 .cart-more-options .srp-container .onda-v1 .blue,
-.orderform-template-holder
-  #client-profile-data
-  form.client-pre-email
-  .link-box-edit,
-.orderform-template-holder
-  #client-profile-data
-  .step.client-profile-data
-  .link-box-edit,
+.orderform-template-holder #client-profile-data form.client-pre-email .link-box-edit,
+.orderform-template-holder #client-profile-data .step.client-profile-data .link-box-edit,
 .orderform-template-holder #shipping-data .link-box-edit,
 .orderform-template-holder #payment-data .link-box-edit,
-.orderform-template-holder
-  .step.shipping-data
-  .vtex-omnishipping-1-x-summaryChange,
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-summaryChange,
 .orderform-template .cart-template.mini-cart .quantity {
   color: var(--color-primary);
 }
@@ -394,8 +141,7 @@ body a:active {
 }
 
 .orderform-template-holder #payment-data .payment-group-item.active:before {
-  border-color: var(--color-primary) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
-    rgba(0, 0, 0, 0);
+  border-color: var(--color-primary) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
 }
 
 svg.pickup-marker-blue,
@@ -526,9 +272,40 @@ body.v-custom-step-payment .arrow.after-shipping {
   color: var(--color-primary);
 }
 
+.btn-place-order-wrapper {
+  display: flex;
+  max-height: 50px;
+  gap: 10px;
+
+}
+
+.btn-place-order-wrapper #cart-to-orderform {
+  font-size: 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-place-order-wrapper #cart-to-orderform svg{
+  display: none;
+}
+.btn-place-order-wrapper #cart-to-orderform::after {
+  font-size: 14px !important;
+  display: flex;
+  content: "Prossiga";
+}
+
 #continue-shopping-button {
-  margin-top: 1rem;
   border: none;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#continue-shopping-button::after {
+  font-size: 12px;
+  display: flex;
+  content: "Continuar comprando";
 }
 
 .checkEmailAuthConflict__modal {
@@ -536,6 +313,7 @@ body.v-custom-step-payment .arrow.after-shipping {
 }
 
 @media (max-width: 690px) {
+
   body:not(.body-cart) .main-header .logo svg,
   body:not(.body-cart) .main-header .logo img,
   .checkout-steps {
@@ -553,7 +331,7 @@ body.v-custom-step-payment .arrow.after-shipping {
     border-bottom: 1px solid #cbcbcb;
   }
 
-  .list-access > .header-access span {
+  .list-access>.header-access span {
     text-align: left;
     line-height: 1rem;
   }
