@@ -156,7 +156,21 @@ const SkuListComponent = React.memo(({ device }: { device: Device }) => {
           </select>
         </div>
       ) : (
-        <></>
+        <select
+          className={s.selectContainer}
+          onChange={(e) => {
+            provider.setSeller(e.target.value);
+          }}
+          name="unidadeDeFaturamento"
+          id="unidade-de-faturamento"
+        >
+          <option value="" disabled selected>
+            Selecione a Unidade de Faturamento
+          </option>
+          {mockSelles.map((seller) => (
+            <option value={seller.value}>{seller.label}</option>
+          ))}
+        </select>
       )}
 
       <div className={s["tab-content"]}>
