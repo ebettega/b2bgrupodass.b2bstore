@@ -2,10 +2,24 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  span{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
+  
+}
+
+
+.skuSupplyLotsContainer span{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.skuSupplyLotsContainer > div{
+  display: flex;
+  flex-direction: column;
+}
+
+.skuSupplyLotsContainer > div:not(:last-child){
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
 }

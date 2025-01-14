@@ -6,14 +6,23 @@ import styles from "./SkuSupplyLots.css";
 function SkuSupplyLots() {
   const { sku } = useSku();
   const hasAttachments = sku.attachments && sku.attachments.length > 0;
-  const [quantity, setQuantity] = useState(null);
-  const [supplyDate, setSupplyDate] = useState("");
+  const [quantity, setQuantity] = useState<any>(null);
+
+  const convertDate = (date: string) => {
+    const dateObject = new Date(date);
+    const formattedDate = dateObject.toLocaleDateString("pt-BR", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    });
+    return formattedDate;
+  };
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `/api/logistics/pvt/inventory/items/${sku.itemId}/warehouses/1_1/supplyLots`
+          `/supplyLots?id=${sku.itemId}`
         );
 
         if (!response.ok) {
@@ -21,16 +30,7 @@ function SkuSupplyLots() {
         }
 
         const data = await response.json();
-        setQuantity(data[0].totalQuantity);
-        if (data[0].dateOfSupplyUtc) {
-          const date = new Date(data[0].dateOfSupplyUtc);
-          const formattedDate = date.toLocaleDateString("pt-BR", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-          });
-          setSupplyDate(formattedDate);
-        }
+        setQuantity(data.response);
       } catch (error) {
         console.error("Erro ao buscar os dados:", error);
       }
@@ -46,9 +46,16 @@ function SkuSupplyLots() {
       ) : (
         <>
           {quantity !== null ? (
-            <span>
-              Estoque futuro: {quantity} {supplyDate}
-            </span>
+            <>
+              {quantity.map((quantityItem: any) => (
+                <div key={quantityItem.skuId}>
+                  <span>Quantidade total:{quantityItem.totalQuantity}</span>
+                  <span>
+                    Estoque futuro: {convertDate(quantityItem.dateOfSupplyUtc)}
+                  </span>
+                </div>
+              ))}
+            </>
           ) : (
             <Spinner />
           )}

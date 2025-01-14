@@ -13,7 +13,7 @@ export class SupplyLots extends JanusClient {
 
   public async getCollection(id: string) {
     const payloadRequest = await this.http.get<{ Description: string }>(
-      `supplyLots?id=${id}`
+      `/api/logistics/pvt/inventory/items/${id}/warehouses/1_1/supplyLots`
     )
 
     return payloadRequest
